@@ -6,7 +6,7 @@
 /*   By: ayegen <ayegen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 18:47:03 by ayegen            #+#    #+#             */
-/*   Updated: 2024/07/12 18:38:31 by ayegen           ###   ########.fr       */
+/*   Updated: 2024/07/12 19:26:15 by ayegen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,8 +67,8 @@ int	main(int argc, char **argv)
 
 	if (argc < 2)
 		return (-1);
-	stack_a = malloc(sizeof(t_list));
-	stack_b = malloc(sizeof(t_list));
+	stack_a = malloc(sizeof(t_list *));
+	stack_b = malloc(sizeof(t_list *));
 	*stack_a = 0;
 	*stack_b = 0;
 	ft_check(stack_a, argc, argv);
@@ -79,10 +79,4 @@ int	main(int argc, char **argv)
 	free(stack_a);
 	free(stack_b);
 	return (0);
-}
-
-void		__attribute__((destructor)) calledLast();
-void	calledLast(void)
-{
-	system("leaks push_swap");
 }

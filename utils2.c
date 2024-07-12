@@ -6,7 +6,7 @@
 /*   By: ayegen <ayegen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 18:47:03 by ayegen            #+#    #+#             */
-/*   Updated: 2024/06/27 18:50:06 by ayegen           ###   ########.fr       */
+/*   Updated: 2024/07/12 19:23:12 by ayegen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	check_space(char const *s)
 			return ;
 		s++;
 	}
-	ft_putstr_fd("error\n", 2);
+	ft_putstr_fd("Error\n", 2);
 	exit(1);
 }
 

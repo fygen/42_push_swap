@@ -6,7 +6,7 @@
 /*   By: ayegen <ayegen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 18:47:03 by ayegen            #+#    #+#             */
-/*   Updated: 2024/07/12 18:22:07 by ayegen           ###   ########.fr       */
+/*   Updated: 2024/07/12 19:05:34 by ayegen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ int	ft_atoi2(char *str)
 			ft_error();
 	}
 	if ((result * sign) == 2147483648)
-		ft_error(); 
+		ft_error();
 	return ((int)result * sign);
 }
 
